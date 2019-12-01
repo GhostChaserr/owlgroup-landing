@@ -1,72 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Webpack Demo</title>
-  </head>
-  <body class="container">
-    <!-- Bootstrap Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a
-              class="nav-link disabled"
-              href="#"
-              tabindex="-1"
-              aria-disabled="true"
-              >Disabled</a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <h1 class="text-center mt-5">
-      Welcome!
-    </h1>
+<head>
+	
+	<meta charset="UTF-8">
+	<title>Owl Group</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
 
-    <div class="alert alert-danger" id="error" role="alert"></div>
-    <div class="row mt-5">
-      <div class="col">
-        <div class="input-group">
-          <input type="text" id="numberOne" class="form-control" />
-          <div class="input-group-append input-group-prepend">
-            <span class="input-group-text">+</span>
-          </div>
-          <input type="text" id="numberTwo" class="form-control" />
-        </div>
-      </div>
-      <div class="col">
-        <button id="addValues" class="btn btn-primary">Add Values</button>
-      </div>
-    </div>
-    <div class="card mt-5">
-      <div class="card-body">The result is: <span id="result"></span></div>
-    </div>
-    <img src="./assets/webpack.svg" />
-  </body>
+	
+</head>
+<body>
+
+	<header id="header">
+		<div class="header-wrap">
+			<img class="logo" src="./img/logo.png">
+			<img src="./img/logo-white.png" alt="" class="logo-white">
+			<a href="#contact" class="write-us" id="write-us">მოგვწერეთ</a>
+			<div class="toggle">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<img src="img/owlgroup-responsive.png" alt="" class="owl-title-respon">
+	</header>
+
+	<nav id="navigation">
+		<div class="navigation-wrap">
+			<a  class="nav-link" data-index="0"><span class="nav-span">მთავარი      </span></a>
+			<a  class="nav-link" data-index="1"><span class="nav-span">ჩვენ&nbsp;შესახებ</span></a>
+			<a  class="nav-link" data-index="2"><span class="nav-span">სერვისები	</span></a>
+			<a  class="nav-link" data-index="3"><span class="nav-span">პროექტები	</span></a>
+			<a  class="nav-link" data-index="4"><span class="nav-span">კონტაქტი	</span></a>
+			<a href="#" class="lang-change">eng</a>	
+		</div>
+	</nav>
+	<div class="nav-popup" id="popup">
+		<div><a href="#banner" class="popup-link"><span class="nav-span">მთავარი      </span></a></div>
+		<div><a href="#about-us" class="popup-link"><span class="nav-span">ჩვენ&nbsp;შესახებ</span></a></div>
+		<div><a href="#services" class="popup-link"><span class="nav-span">სერვისები	</span></a></div>
+		<div><a href="#slider" class="popup-link"><span class="nav-span">პროექტები	</span></a></div>
+		<div><a href="#contact" class="popup-link"><span class="nav-span">კონტაქტი	</span></a></div>
+	</div>
+	<div class="mob-nav">
+		<nav class="mob-nav-wrapper">
+			<a href="#banner" class="mob-nav-link"><span class="nav-span">მთავარი      </span></a>
+			<a href="#about-us" class="mob-nav-link"><span class="nav-span">ჩვენ&nbsp;შესახებ</span></a>
+			<a href="#services" class="mob-nav-link"><span class="nav-span">სერვისები	</span></a>
+			<a href="#slider" class="mob-nav-link"><span class="nav-span">პროექტები	</span></a>
+			<a href="#contact" class="mob-nav-link"><span class="nav-span">კონტაქტი	</span></a>
+			<a href="#" class="lang-change">eng</a>
+		</nav>
+	</div>
+	<section id="banner">
+		<div class="banner-wrap">
+			<div class="line"></div>
+			<div class="banner-img">
+				<img src="img/banner-img-bg/BN-bg-1.png" id="banner-img-bg">
+				<img src="img/owl-group.png" id="owl-group-title">
+			</div>
+		</div>	
+	</section>
+	<footer id="footer">
+		<div class="footer-wrap">
+
+			<div class="footer-social">
+				<a href="#" class="footer-link">/BEHANCE</a>
+				<a href="#" class="footer-link">/FACEBOOK</a>
+				<a href="#" class="footer-link">/INSTAGRAM</a>
+			</div>
+            <span class="footer-scroll-title">SCROLL DOWN</span>
+			<div class="block-list">
+				<a href="#banner" class="block-item"></a>
+				<a href="#about-us" class="block-item"></a>
+				<a href="#services" class="block-item"></a>
+				<a href="#slider" class="block-item"></a>
+				<a href="#contact" class="block-item"></a>
+			</div>
+				
+		</div>	
+	</footer>
+
+
+
+	<section id="about-us">
+		<div class="main-title">
+			<span class="title-with-border">ჩვენ&nbsp;შესახებ</span>
+			<span class="title-with-bg">შვენ&nbsp;შესახებ</span>
+		</div>
+		<div class="about-wrap">
+			<p>ჩვენ გვჯერა, რომ ნებისმიერი ბიზნესის წარმატების ამოსავალი წერტილი სწორი მარკეტინგია.
+			21-ე საუკუნეში სწორი მარკეტინგი ნიშნავს ციფრულ მარკეტინგს.
+			ტექნოლოგიური რესურსებისა და ცოდნის გამოყენებით, გვაქვს ფუფუნება შევქმნათ
+			აბსოლუტურად ნებისმიერი სახის ციფრული მასალა;
+			იქნება ეს ვებგვერდი, აპლიკაცია, ბანერი თუ ვიდეო თამაში. 
+			</p>
+
+			<p>ამასთან, ვითვალისწინებთ ტრადიციული მარკეტინგის მნიშვნელობას და გთავაზობთ
+			სერვისების სრულ პაკეტს: ბეჭდური რეკლამით დაწყებული, ვიდეო რგოლების
+			შეთხზვა-გადაღებით დამთავრებული. 
+			</p>
+			<p>იმისათვის რომ უკეთ გაიგოთ თუ რას გთავაზობთ, იხილეთ „სერვისები“.</p>
+		</div>
+	</section>
+
+
+	<section id="services">
+		<div class="main-title">
+			<span class="title-with-border">სერვისები</span>
+			<span class="title-with-bg">სერვისები</span>
+		</div>
+
+		<div class="services-wrap">
+			<div>
+				<div class="services-slide" id="marketing">
+		            <div class="services-content">
+						<span class="services-title">სტრატეგიული <br> მარკეტინგი</span>
+			            <ul class="services-list">
+			              <li>მარკეტინგული კონსულტაცია</li>
+			              <li>ინტეგრირებული მარკეტინგული სტრატეგია</li>
+			              <li>ბრენდინგი</li>
+			              <li>სარეკლამო არხების დაგეგმვა</li>
+			            </ul>
+		            </div>
+			        <div class="services-img">
+			            <img src="img/services/marketing.png">
+			        </div>
+           		</div>
+       		</div>
+
+           <div>
+           		<div class="services-slide" id="socmedia">
+		              <div class="services-content">
+							<span class="services-title">სოციალური მედია <br> არხების მართვა</span>
+						<div class="service-list-wrap">
+							  <ul class="services-list">
+				                  <li>სტრატეგია</li>
+				                  <li>კონტენტი</li>
+				                  <li>ქოფირაითინგი</li>
+				                  <li>ფოტო და ვიდეო გადაღება</li>
+		                	  </ul>
+		                	   <ul class="services-list">
+				                  <li>დიზაინი</li>
+				                  <li>რეკლამა</li>
+				                  <li>რეპორტი</li>
+		                	  </ul>
+						</div>
+		              </div>
+		              <div class="services-img">
+		                <img src="img/services/social.png">
+		              </div>
+           		</div>
+       		</div>
+
+            <div>
+            	<div class="services-slide" id="design">
+		              <div class="services-content">
+							<span class="services-title">დიზაინი</span>
+		                <ul class="services-list">
+		                  <li>ვებ დიზაინი</li>
+		                  <li>გრაფიკული დიზაინი</li>
+		                  <li>ბანერები</li>
+		                  <li>ლოგო</li>
+		                  <li>ბრენდინგი</li>
+		                </ul>
+		              </div>
+		              <div class="services-img">
+		                <img src="img/services/design.png">
+		              </div>
+           		</div>
+       		</div>
+
+           <div>
+           		<div class="services-slide" id="advertising">
+		              <div class="services-content">
+							<span class="services-title">ციფრული რეკლამა</span>
+
+		                <ul class="services-list">
+		                	<span class="ul-title">Google</span>
+		                  <li>ტექსტური რეკლამა საძიებო სისტემაში</li>
+		                  <li>ბანერული ტიპის რეკლამა</li>
+		                  <li>ვიდეო რეკლამა</li>
+		                  <li>adwords</li>
+		                  <li>youtube</li>
+		                </ul>
+		                <div class="flex">
+			                <ul class="services-list" id="social-adv">
+			                	<span class="ul-title">სოციალური ქსელები</span>
+			                  <li>facebook</li>
+			                  <li>instagram</li>
+			                  <li>linkedin</li>
+			                </ul>
+			                <ul class="services-list" id="asian-adv">
+			                  <span class="ul-title">აზიური არხები</span>
+			                  <li>yandex.ru</li>
+			                  <li>Mytarget.ru (vk.com, ok.ru, mail.ru)</li>
+			                </ul>
+			            </div>
+		              </div>
+		              <div class="services-img">
+		                <img src="img/services/advertising.png">
+		              </div>
+           		</div>
+       		</div>
+
+            <div>
+            	<div class="services-slide" id="seo">
+		              <div class="services-content">
+							<span class="services-title">SEO</span>
+		                <ul class="services-list">
+		                  <li>საიტის სრული ტექნიკური ოპტიმიზაცია</li>
+		                  <li>on site / off site</li>
+		                </ul>
+		              </div>
+		              <div class="services-img">
+		                <img src="img/services/seo.png">
+		              </div>
+          		 </div>
+       		</div>
+
+			<div>
+				<div class="services-slide" id="web">
+		              <div class="services-content">
+							<span class="services-title">ვებ გვერდი/ლენდინგ <br> ფეიჯის დამზადება</span>
+		                <ul class="services-list">
+		                  <li>ლენდინგ ფეიჯები</li>
+		                  <li>ინტერაქტიული HTML5 ბანერები</li>
+		                  <li>ვებ დეველოპმენტი</li>
+		                  <li>აპლიკაციებია</li>
+		                  <li>ჩატბოქსები</li>
+		                  <li>ტექნიკური მხარდაჭერა</li>
+		                </ul>
+		              </div>
+		              <div class="services-img">
+		                <img src="img/services/WEB.png">
+		              </div>
+           		</div>
+       		</div>
+
+           <div>
+           		<div class="services-slide" id="training">
+           			<div class="services-content">
+           				<span class="services-title">ყველა ჩამოთვლილი <br> მიმართულებით ტრენინგი</span>
+           			</div>
+					<div class="services-img" id="training-img">
+						<img src="img/services/training.png">
+					</div>	 
+           		</div>
+       		</div>
+
+		</div>
+	</section>
+
+	<section id="slider">
+		<div class="main-title">
+			<span class="title-with-border">პროექტები</span>
+			<span class="title-with-bg">პროექტები</span>
+		</div>
+	
+		<div class="slider-wrap">
+			<div class="slide">
+				  <div class="slide-item">
+				  	<img src="img/slide-img.png" class="slide-img">
+				  	<div class="slide-overlay">
+				  		<span class="slide-title">ჯეოლაბი</span>
+				  		<span class="slide-text">პატარა აღწერა, მოკლე ორხაზიანი 1</span>
+				  	</div>
+				  	<a href="#" class="slide-link"></a>
+				  </div>
+				  <div class="slide-item">
+				  	<img src="img/slide-img.png" class="slide-img">
+				  	<div class="slide-overlay">
+				  		<span class="slide-title">ჯეოლაბი</span>
+				  		<span class="slide-text">პატარა აღწერა, მოკლე ორხაზიანი 2</span>
+				  	</div>
+				  	<a href="#" class="slide-link"></a>
+				  </div>
+				  <div class="slide-item">
+				  	<img src="img/slide-img.png" class="slide-img">
+				  	<div class="slide-overlay">
+				  		<span class="slide-title">ჯეოლაბი</span>
+				  		<span class="slide-text">პატარა აღწერა, მოკლე ორხაზიანი 3</span>
+				  	</div>
+				  	<a href="#" class="slide-link"></a>
+				  </div>
+				  <div class="slide-item">
+				  	<img src="img/slide-img.png" class="slide-img">
+				  	<div class="slide-overlay">
+				  		<span class="slide-title">ჯეოლაბი</span>
+				  		<span class="slide-text">პატარა აღწერა, მოკლე ორხაზიანი 4</span>
+				  	</div>
+				  	<a href="#" class="slide-link"></a>
+				  </div>
+				  <div class="slide-item">
+				  	<img src="img/slide-img.png" class="slide-img">
+				  	<div class="slide-overlay">
+				  		<span class="slide-title">ჯეოლაბი</span>
+				  		<span class="slide-text">პატარა აღწერა, მოკლე ორხაზიანი 5</span>
+				  	</div>
+				  	<a href="#" class="slide-link"></a>
+				  </div>
+				  <div class="slide-item">
+				  	<img src="img/slide-img.png" class="slide-img">
+				  	<div class="slide-overlay">
+				  		<span class="slide-title">ჯეოლაბი</span>
+				  		<span class="slide-text">პატარა აღწერა, მოკლე ორხაზიანი 6</span>
+				  	</div>
+				  	<a href="#" class="slide-link"></a>
+				  </div>
+				  <div class="slide-item">
+				  	<img src="img/slide-img.png" class="slide-img">
+				  	<div class="slide-overlay">
+				  		<span class="slide-title">ჯეოლაბი</span>
+				  		<span class="slide-text">პატარა აღწერა, მოკლე ორხაზიანი 7</span>
+				  	</div>
+				  	<a href="#" class="slide-link"></a>
+				  </div>
+				  <div class="slide-item">
+				  	<img src="img/slide-img.png" class="slide-img">
+				  	<div class="slide-overlay">
+				  		<span class="slide-title">ჯეოლაბი</span>
+				  		<span class="slide-text">პატარა აღწერა, მოკლე ორხაზიანი 8</span>
+				  	</div>
+				  	<a href="#" class="slide-link"></a>
+				  </div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="contact">
+		<div class="main-title">
+			<span class="title-with-border">კონტაქტი</span>
+			<span class="title-with-bg">კონტაქტი</span>
+		</div>
+			<div class="contact-wrap">
+				<div class="contact-details">
+					<div class="contact-item">
+						<span class="contact-title">emal:</span>
+						<a class="contact-link" href="mailto:info@owlgroup.ge">info@owlgroup.ge</a>
+					</div>
+					<div class="contact-item">
+						<span class="contact-title">tel. number:</span>
+						<a class="contact-link mob-link" href="mob:+995577670404">+995 577 67 04 04</a>
+					</div>
+				</div>
+				<div class="contact-form">
+					<form action="#">
+						<input class="form-input" type="text" name="name" id="name" placeholder="სახელი">
+						<input class="form-input" type="email" name="mail" id="mail" placeholder="მეილი">
+						<input class="form-input" type="text" name="companyName" id="companyName" placeholder="კომპანიის დასახელება">
+						<input type="submit" value="გაგზავნა" class="send-btn">
+					</form>
+				</div>
+			</div>
+	</section>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+
+
+</body>
 </html>
